@@ -1,6 +1,7 @@
 # Techcareer Frontend Mastery
 
-[Github]
+[Github](https://github.com/oguzdemir95/TechCareer_Frontend_Mastery)
+[Font Awesome](https://cdnjs.com/libraries/font-awesome)
 
 [Emmet](https://docs.emmet.io/cheat-sheet/)
 [Codepen](https://codepen.io/pen/)
