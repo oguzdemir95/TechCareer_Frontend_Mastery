@@ -45,6 +45,126 @@
     <!-- Main Start Codes -->
     <main id="main_id">
         <section id="about_me">
+            <!-- Form + Table -->
+            <table border="1" width="100%">
+                
+                
+                <tbody>
+                    <tr>
+                        <td><label for="" id="uname">Adınız</label></td>
+                        <td><input type="text" 
+                            id="uname" 
+                            required autofocus 
+                            title="Adınız" 
+                            placeholder="Adınız..."
+                            ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="uemail">Emailiniz</label>
+                            </label></td>
+                        <td><input type="email" 
+                            id="uemail" 
+                            title="Emailiniz" 
+                            placeholder="Emailiniz..." 
+                            required
+                            ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="upassword">Şifreniz</label>
+                            </label></td>
+                        <td><input type="password" 
+                            id="upassword" 
+                            title="Şifreniz" 
+                            placeholder="Şifreniz..." 
+                            required
+                            ></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="reset" value="Temizle">
+                            <button type="submit">Gönder 2</button>
+                        </td>
+                        
+                        <td></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="5">&copy; Bütün haklar saklıdır.</th>
+                    </tr>
+                </tfoot>
+            </table>
+             <br>
+             <hr>
+            <!-- Table -->
+            <table border="1" width="100%">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Adı</th>
+                        <th>Soyadı</th>
+                        <th>Email</th>
+                        <th>Parola</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Adı 1</td>
+                        <td>Soyadı 1</td>
+                        <td>Email 1</td>
+                        <td>Parola 1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Adı 2</td>
+                        <td>Soyadı 2</td>
+                        <td>Email 2</td>
+                        <td>Parola 2</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="5">&copy; Bütün haklar saklıdır.</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <br>
+            <hr> 
+            <!-- Form -->
+            <form action="#!" method="get" autocomplete="on" target="_blank">
+                <label for="" id="uname">Adınız</label>
+                <input type="text" 
+                id="uname" 
+                required autofocus 
+                title="Adınız" 
+                placeholder="Adınız..."
+                ><br>
+
+                <label for="uemail">Emailiniz</label>
+                <input type="email" 
+                id="uemail" 
+                title="Emailiniz" 
+                placeholder="Emailiniz..." 
+                required
+                ><br>
+
+                <label for="upassword">Şifreniz</label>
+                <input type="password" 
+                id="upassword" 
+                title="Şifreniz" 
+                placeholder="Şifreniz..." 
+                required
+                ><br>
+                
+                <input type="reset" value="Temizle">
+                <input type="submit" value="Gönder">
+                <button type="submit">Gönder 2</button>
+            </form>
+            <br>
+            <hr>
             <!-- DataList -->
              <input type="text" list="frontend" name="techcareer">
             <datalist id="frontend">
