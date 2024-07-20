@@ -16,6 +16,6 @@ h2{
     text-shadow: 0.5px -0.6px 5px blue;
 
     letter-spacing: 5px;
-    word-spacing: 10px !important;
+    word-spacing: 3px !important;
     line-height: 1.2;
 }
