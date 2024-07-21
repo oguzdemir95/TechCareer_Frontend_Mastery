@@ -160,3 +160,14 @@ table td:hover{
     background-color: white;
     color: grey;
 }
+
+/* Clear Fix */
+.my_clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#my_clippath{
+    clip-path: polygon(55% 0%, 100% 55%, 55% 100%, 0 50%);
+}
