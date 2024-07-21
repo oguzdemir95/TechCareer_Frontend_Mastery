@@ -3,7 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    font-size: 20px;
+}
+body{
+    padding: 0 10%;
+}
 /* External CSS */
 h2{
     color:aqua;
@@ -109,4 +114,49 @@ h2{
 .a_link:hover{
     color: grey;
     background-color: #f00;
+}
+
+/* List */
+.ul_class{
+    /* list-style: square; */
+    list-style: none;
+}
+
+#ul_id li{
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    display: inline-block;
+    padding: 1rem;
+    background-color: beige;
+    text-transform: uppercase;
+}
+
+#ul_id li:hover{
+    color: beige;
+    background-color: black;
+}
+
+/* Table */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid red;
+}
+table th{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+table td{
+    background-color: grey;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    border: 1px solid black;
+}
+
+table td:hover{
+    background-color: white;
+    color: grey;
 }
