@@ -326,4 +326,33 @@ img{
     width: 90%;
     height: 200px;
 }
-    
+/* Form */
+.form_data > label{
+    display: block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}   
+.form_data > input{
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4%;
+}
+input[type="text"],input[type="email"],input[type="password"]{
+    background-color: rgb(206,208,200);
+}
+input[type="reset"],input[type="submit"]{
+    background: linear-gradient(to left, blue,green);
+    color: white;
+    padding: 0.4rem;
+}
+input[type="reset"]:hover,input[type="submit"]:hover{
+    background: linear-gradient(to right, blue,green);
+    color: white;
+    padding: 0.4rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+
+}
