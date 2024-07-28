@@ -1,351 +1,466 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Bootstrap 5 Tutorials</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <!-- RD -->
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+  <head>
+    <title>Bootstrap 5 Tutorials</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <!-- RD -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-    </head>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- External CSS -->
+     <link rel="stylesheet" href="template.css">
+  </head>
 
-    <body class="container">
-        <!-- Start Code -->
-        <hr>
-        <br><br>
-        <h1>Table</h1>
-        <div
-            class="table-responsive-md"
-        >
-            <table
-                class="table table-primary table-hover table-striped table-responsive"
-            >
-                <thead>
-                    <tr>
-                        <th scope="col">Column 1</th>
-                        <th scope="col">Column 2</th>
-                        <th scope="col">Column 3</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="">
-                        <td scope="row">R1C1</td>
-                        <td>R1C2</td>
-                        <td>R1C3</td>
-                    </tr>
-                    <tr class="">
-                        <td scope="row">Item</td>
-                        <td>Item</td>
-                        <td>Item</td>
-                    </tr>
-                    <tr class="">
-                        <td scope="row">Item</td>
-                        <td>Item</td>
-                        <td>Item</td>
-                    </tr>
-                    <tr class="">
-                        <td scope="row">Item</td>
-                        <td>Item</td>
-                        <td>Item</td>
-                    </tr>
-                    <tr class="">
-                        <td scope="row">Item</td>
-                        <td>Item</td>
-                        <td>Item</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        
-        <hr>
-        <br><br>
-        <h1>List</h1>
-        <ul class="list-group list-group-numbered">
-            <li class="list-group-item active">Active item</li>
-            <li class="list-group-item">Item</li>
-            <li class="list-group-item disabled">Disabled item</li>
-        </ul>
-        
-<br><br>
-        <ul class="list-group">
-            <li class="list-group-item">List Item-1</li>
-            <li class="list-group-item">List Item-2</li>
-            <li class="list-group-item">List Item-3</li>
-            <li class="list-group-item">List Item-4</li>
-            <li class="list-group-item">List Item-5</li>
-        </ul>
-
-        <hr>
-        <br><br>
-        <h1>Alert</h1>
-        <div
-            class="alert alert-dark alert-dismissible fade show"
-            role="alert"
-        >
-            <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="alert"
-                aria-label="Close"
-            ></button>
-        
-            <strong>Holy guacamole!</strong> You should check in on some of
-            those fields below.
-        </div>
-        
-        <div
-            class="alert alert-info"
-            role="alert"
-        >
-            <strong>Alert Heading</strong> Some Word
-        </div>
-        
-        <div class="alert alert-primary" role="alert">Bu bir Alert Primary</div>
-        <div class="alert alert-secondary" role="alert">Bu bir Alert Secondary</div>
-        <div class="alert alert-danger" role="alert">Bu bir Alert Danger</div>
-        <div class="alert alert-warning" role="alert">Bu bir Alert Warning</div>
-        <div class="alert alert-dark" role="alert">Bu bir Alert Dark</div>
-
-        <hr>
-        <br><br>
-        <h1>Float, Clearfix</h1>
-        <div class="container mb-4 mt-4">
-            <div class="clearfix">
-                <div class="float-end p-2 mb-2 bg-dark text-white">
-                    <p>SAĞA YASLA</p>
-                 </div>
-
-                 <div class="float-start p-2 mb-2 bg-warning text-white">
-                    <p>SOLA YASLA</p>
-                 </div>
-            </div>
-            
-        </div>
-         
-        <hr>
-        <br><br>
-        <h1>Image Shadow, Rounded</h1>
-        <div style="height: 200px;">
-            <img class="w-50 mh-50 shadow-lg rounded-circle img-fluid img-thumbnail rounded" src="../images/computer.jpeg" alt="Not image">
-        </div>
-        
-<br><br><br><br>
-<hr>
-        <br><br>
-        <h1>Image Shadow</h1>
-        <div style="height: 200px;">
-            <img class="w-50 mh-50 shadow img-fluid img-thumbnail rounded" src="../images/computer.jpeg" alt="Not image">
-        </div>
-<br><br><br><br>
-<hr>
-        <br><br>
-        <h1>Image</h1>
-        <div style="height: 200px;">
-            <img class="w-50 mh-50 img-fluid img-thumbnail rounded" src="../images/computer.jpeg" alt="Not image">
-        </div>
-<br><br><br><br>
-        <div style="height: 200px;">
-            <img class="w-25 h-50" src="../images/computer.jpeg" alt="Not image">
-        </div>
-        <hr>
-        <br><br>
-         <h1>Size Height</h1>
-         <div style="height: 100px; background-color: blue;">
-         <div class="h-25 bg-warning text-black mt-2 mb-2">H-25</div>
-         <div class="h-50 bg-warning text-black mt-2 mb-2">H-25</div>
-         <div class="h-75 bg-warning text-black mt-2 mb-2">H-25</div>
-         <div class="h-100 bg-warning text-black mt-2 mb-2">H-25</div>
-        </div>
-
-        <hr>
-        <br><br>
-         <h1>Size Width</h1>
-         <div class="p-3 bg-primary text-dark">1. KUTU</div>
-         <div class="p-3 bg-primary text-white w-25 mt-3 mb-3">2. KUTU</div>
-         <div class="p-3 bg-primary text-white w-50 mt-3 mb-3">3. KUTU</div>
-         <div class="p-3 bg-primary text-white w-75 mt-3 mb-3">4. KUTU</div>
-         <div class="p-3 bg-primary text-white w-100 mt-3 mb-3">5. KUTU</div>
-
-        <hr>
-        <br><br>
-         <h1>Display</h1>
-         <a href="#" class="link link-success d-table">Link Success</a>
-         <a href="#" class="link link-success d-grid">Link Success</a>
-         <a href="#" class="link link-success d-inline-flex">Link Success</a>
-         <a href="#" class="link link-success d-flex">Link Success</a>
-         <a href="#" class="link link-success d-inline-block">Link Success</a>
-         <a href="#" class="link link-success d-block">Link Success</a>
-         <a href="#" class="link link-success d-none">Link Success</a>
-
-        <hr>
-        <br><br>
-         <h1>Link</h1>
-         <a href="#" class="link link-success">Link Success</a>
-         <a href="#" class="link link-danger">Link Danger</a>
-         <a href="#" class="btn btn-primary link-success">Link Success</a>
-
-        <hr>
-        <br><br>
-         <h1>Button</h1>
-         <button class="btn btn-primary mb-3 mt-3">Button Primary</button><br>
-         <button class="btn btn-secondary mb-3 mt-3">Button Secondary</button><br>
-         <button class="btn btn-danger mb-3 mt-3">Button Danger</button><br>
-         <button class="btn btn-outline-danger mb-3 mt-3">Button D-Outline</button><br>
-         <button class="btn btn-link mb-3 mt-3">Button Link</button><br>
-         <button class="btn btn-warning btn-sm mb-3 mt-3">Button Warning</button><br>
-         <button class="btn btn-warning btn-md mb-3 mt-3">Button Warning</button><br>
-         <button class="btn btn-warning btn-lg mb-3 mt-3">Button Warning</button><br>
-         <button class="btn btn-warning d-block mb-3 mt-3">Button Warning</button><br>
-
-        <hr>
-        <br><br>
-         <h1>Padding: 0-1-2-3-4-5</h1>
-         <p class="text-primary border border-2 border-danger rounded mx-3 px-5">px-3</p>
-         <p class="text-primary border border-2 border-danger rounded my-3 py-5">py-3</p>
-         <p class="text-primary border border-2 border-danger rounded mt-3 pt-3">pt-3</p>
-         <p class="text-primary border border-2 border-danger rounded mb-3 pb-3">pb-3</p>
-         <p class="text-primary border border-2 border-danger rounded ms-3 ps-3">ps-3</p>
-         <p class="text-primary border border-2 border-danger rounded me-3 pe-3">pe-3</p>
-         <p class="text-primary border border-2 border-danger rounded m-1 p-1">Bu margin örneğidir</p>
-         <p class="text-primary border border-2 border-danger rounded m-2 p-2">Bu margin örneğidir</p>
-         <p class="text-primary border border-2 border-danger rounded m-3 p-3">Bu margin örneğidir</p>
-         <p class="text-primary border border-2 border-danger rounded m-4 p-4">Bu margin örneğidir</p>
-         <p class="text-primary border border-2 border-danger rounded m-5 p-5">Bu margin örneğidir</p>
-
-        <hr>
-        <br><br>
-         <h1>Margin: 0-1-2-3-4-5</h1>
-         <p class="text-primary border border-2 border-danger rounded mx-3">mx-3</p>
-         <p class="text-primary border border-2 border-danger rounded my-3">my-3</p>
-         <p class="text-primary border border-2 border-danger rounded mt-3">mt-3</p>
-         <p class="text-primary border border-2 border-danger rounded mb-3">mb-3</p>
-         <p class="text-primary border border-2 border-danger rounded ms-3">ms-3</p>
-         <p class="text-primary border border-2 border-danger rounded me-3">me-3</p>
-         <p class="text-primary border border-2 border-danger rounded m-1">Bu margin örneğidir</p>
-         <p class="text-primary border border-2 border-danger rounded m-2">Bu margin örneğidir</p>
-         <p class="text-primary border border-2 border-danger rounded m-3">Bu margin örneğidir</p>
-         <p class="text-primary border border-2 border-danger rounded m-4">Bu margin örneğidir</p>
-         <p class="text-primary border border-2 border-danger rounded m-5">Bu margin örneğidir</p>
-
-        <hr>
-        <br><br>
-         <h1>Rounded</h1>
-         <p class="text-capitalize text-center border rounded">ROUNDED</p>
-         <p class="text-capitalize text-center border rounded-top">TOP</p>
-         <p class="text-capitalize text-center border rounded-bottom">BOTTOM</p>
-         <p class="text-capitalize text-center border rounded-start">LEFT</p>
-         <p class="text-capitalize text-center border rounded-end">RIGHT</p>
-
-        <hr>
-        <br><br>
-         <h1>Border</h1>
-         <p class="text-capitalize text-center border">CENTER</p>
-         <p class="text-capitalize text-center border border-primary">CENTER</p>
-         <p class="text-capitalize text-center border border-secondary">CENTER</p>
-         <p class="text-capitalize text-center border border-secondary border-1">CENTER</p>
-         <p class="text-capitalize text-center border border-secondary border-2">CENTER</p>
-         <p class="text-capitalize text-center border border-secondary border-3">CENTER</p>
-         <p class="text-capitalize text-center border border-secondary border-4">CENTER</p>
-         <p class="text-capitalize text-center border border-secondary border-5">CENTER</p>
-
-        <hr>
-        <br><br>
-         <h1>Text</h1>
-         <p class="bg-dark text-white text-capitalize text-center">CENTER</p>
-         <p class="bg-dark text-white text-capitalize text-end">RIGHT</p>
-         <p class="bg-dark text-white text-capitalize text-start">LEFT</p>
-         <p class="bg-dark text-white text-capitalize">Bu bir yazıdır</p>
-         <p class="bg-dark text-white text-lowercase">Bu bir yazıdır</p>
-         <p class="bg-dark text-white text-uppercase">Bu bir yazıdır</p>
-         <p class="bg-dark text-white fst-italic">Bu bir yazıdır</p>
-         <p class="bg-dark text-white fst-normal">Bu bir yazıdır</p>
-         <p class="bg-dark text-white fw-bold">Bu bir yazıdır</p>
-         <p class="bg-dark text-white fw-bolder">Bu bir yazıdır</p>
-         <p class="bg-dark text-white fw-light">Bu bir yazıdır</p>
-         <p class="bg-info text-warning fs-1">Font</p>
-         <p class="bg-info text-warning fs-2">Font</p>
-         <p class="bg-info text-warning fs-3">Font</p>
-         <p class="bg-info text-warning fs-4">Font</p>
-         <p class="bg-info text-warning fs-5">Font</p>
-         <p class="bg-info text-warning fs-6">Font</p>
-
-        <hr>
-        <br><br>
-         <h1>Background Color</h1>
-         <p class="display-1 bg-dark text-primary">Color-primary</p>
-         <p class="display-1 bg-dark text-secondary">Color-secondary</p>
-         <p class="display-1 bg-dark text-danger">Color-danger</p>
-         <p class="display-1 bg-dark text-warning">Color-warning</p>
-         <p class="display-1 bg-dark text-info">Color-info</p>
-         <p class="display-1 bg-info text-dark">Color-dark</p>
-         <p class="display-1 bg-dark text-light">Color-light</p>
-         <p class="display-1 bg-light text-muted">Color-muted</p>
-
-        <hr>
-        <br><br>
-         <h1>Color</h1>
-         <p class="display-1 text-primary">Color-primary</p>
-         <p class="display-1 text-secondary">Color-secondary</p>
-         <p class="display-1 text-danger">Color-danger</p>
-         <p class="display-1 text-warning">Color-warning</p>
-         <p class="display-1 text-info">Color-info</p>
-         <p class="display-1 text-dark">Color-dark</p>
-         <p class="display-1 text-light">Color-light</p>
-         <p class="display-1 text-muted">Color-muted</p>
-         
-        <hr>
-        <br><br>
-         <h1>Display (6)</h1>
-         <p class="display-1">Display-1</p>
-         <p class="display-2">Display-2</p>
-         <p class="display-3">Display-3</p>
-         <p class="display-4">Display-4</p>
-         <p class="display-5">Display-5</p>
-         <p class="display-6">Display-6</p>
-
-        <hr>
-        <br><br>
-         <h1>Heading (6)</h1>
-        <p class="h1">Heading-1</p>
-        <p class="h2">Heading-2</p> 
-        <p class="h3">Heading-3</p> 
-        <p class="h4">Heading-4</p> 
-        <p class="h5">Heading-5</p> 
-        <p class="h6">Heading-6</p> 
-
-        <hr>
-         <br><br>
-         <p class="text-primary">Merhaba</p>
-        <!-- End Code -->
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">1.ALAN</div>
-                <div class="col-md-6">2.ALAN</div>
+  <body class="container">
+    <!-- Start Code -->
+    <hr />
+    <br /><br />
+    <h1>Form</h1>
+    
+            <form action="">
+                <div class="container">
+                    <div class="row">
+                <div class="form-group mb-4 col-sm-12 col-md-6 col-lg-4 shadow">
+                    <label for="ufullname">Ad Soyad</label>
+                    <input type="text" class="form-control" id="ufullname" placeholder="Ad Soyad" title="Adınız Soyadınız">
+                    <small id="fullnameHelp" class="form-text text-muted">Ad Soyad</small>
+                </div>
+                <div class="form-group mb-4 col-sm-12 col-md-6 col-lg-4 shadow">
+                    <label for="uemail">Email</label>
+                    <input type="text" class="form-control" id="uemail" placeholder="Email" title="Email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group mb-4 col-sm-12 col-md-6 col-lg-4 shadow">
+                    <label for="upassword">Parola</label>
+                    <input type="password" class="form-control" id="upassword" placeholder="Parola" title="Parola">
+                    <small id="passwordHelp" class="form-text text-muted">Parola</small>
+                </div>
+                <div class="form-group mb-4 col-sm-12 col-md-12 col-lg-12 shadow">
+                    <input type="reset" value="Temizle" class="btn btn-danger">
+                    <button type="reset" class="btn btn-primary">Gönder</button>
+                </div>
             </div>
         </div>
+            </form>
+        
+    
+    <hr />
+    <br /><br />
+    <h1>Responsive Design</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3 shadow mb-3 bg-primary">
+          <p class="line-clamp6">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus culpa consequatur rerum deserunt eveniet dolor itaque earum aperiam amet nostrum voluptates dolore perspiciatis, ducimus delectus ipsa odio voluptas in suscipit!
+            Ab aliquid neque eveniet odio ducimus optio assumenda ea blanditiis, earum hic saepe. Animi deleniti, quibusdam similique rerum non vitae repellat quo reiciendis cupiditate, blanditiis, culpa harum minus ratione. Harum!
+          </p>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 shadow mb-3 bg-secondary">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus culpa consequatur rerum deserunt eveniet dolor itaque earum aperiam amet nostrum voluptates dolore perspiciatis, ducimus delectus ipsa odio voluptas in suscipit!
+              Ab aliquid neque eveniet odio ducimus optio assumenda ea blanditiis, earum hic saepe. Animi deleniti, quibusdam similique rerum non vitae repellat quo reiciendis cupiditate, blanditiis, culpa harum minus ratione. Harum!
+            </p>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 shadow mb-3 bg-success">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus culpa consequatur rerum deserunt eveniet dolor itaque earum aperiam amet nostrum voluptates dolore perspiciatis, ducimus delectus ipsa odio voluptas in suscipit!
+              Ab aliquid neque eveniet odio ducimus optio assumenda ea blanditiis, earum hic saepe. Animi deleniti, quibusdam similique rerum non vitae repellat quo reiciendis cupiditate, blanditiis, culpa harum minus ratione. Harum!
+            </p>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 shadow mb-3 bg-info">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus culpa consequatur rerum deserunt eveniet dolor itaque earum aperiam amet nostrum voluptates dolore perspiciatis, ducimus delectus ipsa odio voluptas in suscipit!
+              Ab aliquid neque eveniet odio ducimus optio assumenda ea blanditiis, earum hic saepe. Animi deleniti, quibusdam similique rerum non vitae repellat quo reiciendis cupiditate, blanditiis, culpa harum minus ratione. Harum!
+            </p>
+          </div>
+      </div>
+    </div>
 
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
+    <hr />
+    <br /><br />
+    <h1>Table</h1>
+    <div class="table-responsive-md">
+      <table
+        class="table table-primary table-hover table-striped table-responsive"
+      >
+        <thead>
+          <tr>
+            <th scope="col">Column 1</th>
+            <th scope="col">Column 2</th>
+            <th scope="col">Column 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="">
+            <td scope="row">R1C1</td>
+            <td>R1C2</td>
+            <td>R1C3</td>
+          </tr>
+          <tr class="">
+            <td scope="row">Item</td>
+            <td>Item</td>
+            <td>Item</td>
+          </tr>
+          <tr class="">
+            <td scope="row">Item</td>
+            <td>Item</td>
+            <td>Item</td>
+          </tr>
+          <tr class="">
+            <td scope="row">Item</td>
+            <td>Item</td>
+            <td>Item</td>
+          </tr>
+          <tr class="">
+            <td scope="row">Item</td>
+            <td>Item</td>
+            <td>Item</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+    <hr />
+    <br /><br />
+    <h1>List</h1>
+    <ul class="list-group list-group-numbered">
+      <li class="list-group-item active">Active item</li>
+      <li class="list-group-item">Item</li>
+      <li class="list-group-item disabled">Disabled item</li>
+    </ul>
+
+    <br /><br />
+    <ul class="list-group">
+      <li class="list-group-item">List Item-1</li>
+      <li class="list-group-item">List Item-2</li>
+      <li class="list-group-item">List Item-3</li>
+      <li class="list-group-item">List Item-4</li>
+      <li class="list-group-item">List Item-5</li>
+    </ul>
+
+    <hr />
+    <br /><br />
+    <h1>Alert</h1>
+    <div class="alert alert-dark alert-dismissible fade show" role="alert">
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+
+      <strong>Holy guacamole!</strong> You should check in on some of those
+      fields below.
+    </div>
+
+    <div class="alert alert-info" role="alert">
+      <strong>Alert Heading</strong> Some Word
+    </div>
+
+    <div class="alert alert-primary" role="alert">Bu bir Alert Primary</div>
+    <div class="alert alert-secondary" role="alert">Bu bir Alert Secondary</div>
+    <div class="alert alert-danger" role="alert">Bu bir Alert Danger</div>
+    <div class="alert alert-warning" role="alert">Bu bir Alert Warning</div>
+    <div class="alert alert-dark" role="alert">Bu bir Alert Dark</div>
+
+    <hr />
+    <br /><br />
+    <h1>Float, Clearfix</h1>
+    <div class="container mb-4 mt-4">
+      <div class="clearfix">
+        <div class="float-end p-2 mb-2 bg-dark text-white">
+          <p>SAĞA YASLA</p>
+        </div>
+
+        <div class="float-start p-2 mb-2 bg-warning text-white">
+          <p>SOLA YASLA</p>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <br /><br />
+    <h1>Image Shadow, Rounded</h1>
+    <div style="height: 200px">
+      <img
+        class="w-50 mh-50 shadow-lg rounded-circle img-fluid img-thumbnail rounded"
+        src="../images/computer.jpeg"
+        alt="Not image"
+      />
+    </div>
+
+    <br /><br /><br /><br />
+    <hr />
+    <br /><br />
+    <h1>Image Shadow</h1>
+    <div style="height: 200px">
+      <img
+        class="w-50 mh-50 shadow img-fluid img-thumbnail rounded"
+        src="../images/computer.jpeg"
+        alt="Not image"
+      />
+    </div>
+    <br /><br /><br /><br />
+    <hr />
+    <br /><br />
+    <h1>Image</h1>
+    <div style="height: 200px">
+      <img
+        class="w-50 mh-50 img-fluid img-thumbnail rounded"
+        src="../images/computer.jpeg"
+        alt="Not image"
+      />
+    </div>
+    <br /><br /><br /><br />
+    <div style="height: 200px">
+      <img class="w-25 h-50" src="../images/computer.jpeg" alt="Not image" />
+    </div>
+    <hr />
+    <br /><br />
+    <h1>Size Height</h1>
+    <div style="height: 100px; background-color: blue">
+      <div class="h-25 bg-warning text-black mt-2 mb-2">H-25</div>
+      <div class="h-50 bg-warning text-black mt-2 mb-2">H-25</div>
+      <div class="h-75 bg-warning text-black mt-2 mb-2">H-25</div>
+      <div class="h-100 bg-warning text-black mt-2 mb-2">H-25</div>
+    </div>
+
+    <hr />
+    <br /><br />
+    <h1>Size Width</h1>
+    <div class="p-3 bg-primary text-dark">1. KUTU</div>
+    <div class="p-3 bg-primary text-white w-25 mt-3 mb-3">2. KUTU</div>
+    <div class="p-3 bg-primary text-white w-50 mt-3 mb-3">3. KUTU</div>
+    <div class="p-3 bg-primary text-white w-75 mt-3 mb-3">4. KUTU</div>
+    <div class="p-3 bg-primary text-white w-100 mt-3 mb-3">5. KUTU</div>
+
+    <hr />
+    <br /><br />
+    <h1>Display</h1>
+    <a href="#" class="link link-success d-table">Link Success</a>
+    <a href="#" class="link link-success d-grid">Link Success</a>
+    <a href="#" class="link link-success d-inline-flex">Link Success</a>
+    <a href="#" class="link link-success d-flex">Link Success</a>
+    <a href="#" class="link link-success d-inline-block">Link Success</a>
+    <a href="#" class="link link-success d-block">Link Success</a>
+    <a href="#" class="link link-success d-none">Link Success</a>
+
+    <hr />
+    <br /><br />
+    <h1>Link</h1>
+    <a href="#" class="link link-success">Link Success</a>
+    <a href="#" class="link link-danger">Link Danger</a>
+    <a href="#" class="btn btn-primary link-success">Link Success</a>
+
+    <hr />
+    <br /><br />
+    <h1>Button</h1>
+    <button class="btn btn-primary mb-3 mt-3">Button Primary</button><br />
+    <button class="btn btn-secondary mb-3 mt-3">Button Secondary</button><br />
+    <button class="btn btn-danger mb-3 mt-3">Button Danger</button><br />
+    <button class="btn btn-outline-danger mb-3 mt-3">Button D-Outline</button
+    ><br />
+    <button class="btn btn-link mb-3 mt-3">Button Link</button><br />
+    <button class="btn btn-warning btn-sm mb-3 mt-3">Button Warning</button
+    ><br />
+    <button class="btn btn-warning btn-md mb-3 mt-3">Button Warning</button
+    ><br />
+    <button class="btn btn-warning btn-lg mb-3 mt-3">Button Warning</button
+    ><br />
+    <button class="btn btn-warning d-block mb-3 mt-3">Button Warning</button
+    ><br />
+
+    <hr />
+    <br /><br />
+    <h1>Padding: 0-1-2-3-4-5</h1>
+    <p class="text-primary border border-2 border-danger rounded mx-3 px-5">
+      px-3
+    </p>
+    <p class="text-primary border border-2 border-danger rounded my-3 py-5">
+      py-3
+    </p>
+    <p class="text-primary border border-2 border-danger rounded mt-3 pt-3">
+      pt-3
+    </p>
+    <p class="text-primary border border-2 border-danger rounded mb-3 pb-3">
+      pb-3
+    </p>
+    <p class="text-primary border border-2 border-danger rounded ms-3 ps-3">
+      ps-3
+    </p>
+    <p class="text-primary border border-2 border-danger rounded me-3 pe-3">
+      pe-3
+    </p>
+    <p class="text-primary border border-2 border-danger rounded m-1 p-1">
+      Bu margin örneğidir
+    </p>
+    <p class="text-primary border border-2 border-danger rounded m-2 p-2">
+      Bu margin örneğidir
+    </p>
+    <p class="text-primary border border-2 border-danger rounded m-3 p-3">
+      Bu margin örneğidir
+    </p>
+    <p class="text-primary border border-2 border-danger rounded m-4 p-4">
+      Bu margin örneğidir
+    </p>
+    <p class="text-primary border border-2 border-danger rounded m-5 p-5">
+      Bu margin örneğidir
+    </p>
+
+    <hr />
+    <br /><br />
+    <h1>Margin: 0-1-2-3-4-5</h1>
+    <p class="text-primary border border-2 border-danger rounded mx-3">mx-3</p>
+    <p class="text-primary border border-2 border-danger rounded my-3">my-3</p>
+    <p class="text-primary border border-2 border-danger rounded mt-3">mt-3</p>
+    <p class="text-primary border border-2 border-danger rounded mb-3">mb-3</p>
+    <p class="text-primary border border-2 border-danger rounded ms-3">ms-3</p>
+    <p class="text-primary border border-2 border-danger rounded me-3">me-3</p>
+    <p class="text-primary border border-2 border-danger rounded m-1">
+      Bu margin örneğidir
+    </p>
+    <p class="text-primary border border-2 border-danger rounded m-2">
+      Bu margin örneğidir
+    </p>
+    <p class="text-primary border border-2 border-danger rounded m-3">
+      Bu margin örneğidir
+    </p>
+    <p class="text-primary border border-2 border-danger rounded m-4">
+      Bu margin örneğidir
+    </p>
+    <p class="text-primary border border-2 border-danger rounded m-5">
+      Bu margin örneğidir
+    </p>
+
+    <hr />
+    <br /><br />
+    <h1>Rounded</h1>
+    <p class="text-capitalize text-center border rounded">ROUNDED</p>
+    <p class="text-capitalize text-center border rounded-top">TOP</p>
+    <p class="text-capitalize text-center border rounded-bottom">BOTTOM</p>
+    <p class="text-capitalize text-center border rounded-start">LEFT</p>
+    <p class="text-capitalize text-center border rounded-end">RIGHT</p>
+
+    <hr />
+    <br /><br />
+    <h1>Border</h1>
+    <p class="text-capitalize text-center border">CENTER</p>
+    <p class="text-capitalize text-center border border-primary">CENTER</p>
+    <p class="text-capitalize text-center border border-secondary">CENTER</p>
+    <p class="text-capitalize text-center border border-secondary border-1">
+      CENTER
+    </p>
+    <p class="text-capitalize text-center border border-secondary border-2">
+      CENTER
+    </p>
+    <p class="text-capitalize text-center border border-secondary border-3">
+      CENTER
+    </p>
+    <p class="text-capitalize text-center border border-secondary border-4">
+      CENTER
+    </p>
+    <p class="text-capitalize text-center border border-secondary border-5">
+      CENTER
+    </p>
+
+    <hr />
+    <br /><br />
+    <h1>Text</h1>
+    <p class="bg-dark text-white text-capitalize text-center">CENTER</p>
+    <p class="bg-dark text-white text-capitalize text-end">RIGHT</p>
+    <p class="bg-dark text-white text-capitalize text-start">LEFT</p>
+    <p class="bg-dark text-white text-capitalize">Bu bir yazıdır</p>
+    <p class="bg-dark text-white text-lowercase">Bu bir yazıdır</p>
+    <p class="bg-dark text-white text-uppercase">Bu bir yazıdır</p>
+    <p class="bg-dark text-white fst-italic">Bu bir yazıdır</p>
+    <p class="bg-dark text-white fst-normal">Bu bir yazıdır</p>
+    <p class="bg-dark text-white fw-bold">Bu bir yazıdır</p>
+    <p class="bg-dark text-white fw-bolder">Bu bir yazıdır</p>
+    <p class="bg-dark text-white fw-light">Bu bir yazıdır</p>
+    <p class="bg-info text-warning fs-1">Font</p>
+    <p class="bg-info text-warning fs-2">Font</p>
+    <p class="bg-info text-warning fs-3">Font</p>
+    <p class="bg-info text-warning fs-4">Font</p>
+    <p class="bg-info text-warning fs-5">Font</p>
+    <p class="bg-info text-warning fs-6">Font</p>
+
+    <hr />
+    <br /><br />
+    <h1>Background Color</h1>
+    <p class="display-1 bg-dark text-primary">Color-primary</p>
+    <p class="display-1 bg-dark text-secondary">Color-secondary</p>
+    <p class="display-1 bg-dark text-danger">Color-danger</p>
+    <p class="display-1 bg-dark text-warning">Color-warning</p>
+    <p class="display-1 bg-dark text-info">Color-info</p>
+    <p class="display-1 bg-info text-dark">Color-dark</p>
+    <p class="display-1 bg-dark text-light">Color-light</p>
+    <p class="display-1 bg-light text-muted">Color-muted</p>
+
+    <hr />
+    <br /><br />
+    <h1>Color</h1>
+    <p class="display-1 text-primary">Color-primary</p>
+    <p class="display-1 text-secondary">Color-secondary</p>
+    <p class="display-1 text-danger">Color-danger</p>
+    <p class="display-1 text-warning">Color-warning</p>
+    <p class="display-1 text-info">Color-info</p>
+    <p class="display-1 text-dark">Color-dark</p>
+    <p class="display-1 text-light">Color-light</p>
+    <p class="display-1 text-muted">Color-muted</p>
+
+    <hr />
+    <br /><br />
+    <h1>Display (6)</h1>
+    <p class="display-1">Display-1</p>
+    <p class="display-2">Display-2</p>
+    <p class="display-3">Display-3</p>
+    <p class="display-4">Display-4</p>
+    <p class="display-5">Display-5</p>
+    <p class="display-6">Display-6</p>
+
+    <hr />
+    <br /><br />
+    <h1>Heading (6)</h1>
+    <p class="h1">Heading-1</p>
+    <p class="h2">Heading-2</p>
+    <p class="h3">Heading-3</p>
+    <p class="h4">Heading-4</p>
+    <p class="h5">Heading-5</p>
+    <p class="h6">Heading-6</p>
+
+    <hr />
+    <br /><br />
+    <p class="text-primary">Merhaba</p>
+    <!-- End Code -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">1.ALAN</div>
+        <div class="col-md-6">2.ALAN</div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
