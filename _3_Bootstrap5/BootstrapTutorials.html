@@ -23,6 +23,7 @@
 
   <body class="container">
     <!-- Start Code -->
+    
     <hr />
     <br /><br />
     <h1>Navbar</h1>
@@ -51,6 +52,11 @@
                             <span class="visually-hidden">(current)</span></a
                         >
                     </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-bs-toggle="offcanvas"
+                      data-bs-target="#login_id" href="#" data-bs-toggle="modal"
+                      >Login</a>
+                  </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-bs-toggle="modal"
                         data-bs-target="#register_id">Register</a>
@@ -96,6 +102,63 @@
     </nav>
 
     <!-- Navbar End -->
+
+    <hr />
+    <br /><br />
+    <h1>Off Canvas</h1>
+    <!-- <button
+      class="btn btn-primary"
+      type="button"
+      
+      aria-controls="login_id"
+    >
+      Enable both scrolling & backdrop
+    </button> -->
+
+    <!-- Login Off Canvas -->
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="login_id"
+      aria-labelledby="Enable both scrolling & backdrop"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="Enable both scrolling & backdrop">
+          Login
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <form action="">
+          <div class="container">
+              <div class="row">
+          
+          <div class="form-group mb-4 shadow">
+              <label for="uemail">Email</label>
+              <input type="text" class="form-control" id="uemail" placeholder="Email" title="Email">
+              <small id="emailHelp" class="d-none form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group mb-4 shadow">
+              <label for="upassword">Parola</label>
+              <input type="password" class="form-control" id="upassword" placeholder="Parola" title="Parola">
+              <small id="passwordHelp" class="d-none form-text text-muted">Parola</small>
+          </div>
+          <div class="form-group mb-4 col-sm-12 col-md-12 col-lg-12 shadow">
+              <input type="reset" value="Temizle" class="btn btn-danger">
+              <button type="reset" class="btn btn-primary">Gönder</button>
+          </div>
+      </div>
+  </div>
+      </form>
+      </div>
+    </div>
+    
     <hr />
     <br /><br />
     <h1>Carousel</h1>
@@ -238,6 +301,48 @@
             options,
         );
      </script> -->
+     
+     <hr />
+    <br /><br />
+    <h1>BreadCrumb</h1>
+     <nav class="breadcrumb">
+      <a class="breadcrumb-item" href="#">Main</a>
+      <a class="breadcrumb-item" href="#">Sub</a>
+      <span class="breadcrumb-item active" aria-current="page">Active</span>
+     </nav>
+     
+     <hr />
+    <br /><br />
+    <h1>Toast</h1>
+     <!-- Flexbox container for aligning the toasts -->
+     <div
+      aria-live="polite"
+      aria-atomic="true"
+      class="d-flex justify-content-end align-items-end"
+      style="min-height: 200px"
+     >
+      <!-- Then put toasts within -->
+      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="" class="rounded me-2" alt="{4:Bootstrap}" />
+          <strong class="me-auto">{4:Bootstrap}</strong>
+          <small>{5:11 mins ago}</small>
+          <button
+            type="button"
+            class="ms-2 mb-1 close"
+            data-dismiss="toast"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="toast-body">
+          Hello, world! This is a toast message.
+        </div>
+      </div>
+     </div>
+     
+     $('.toast').toast(option)
      
     <hr />
     <br /><br />
