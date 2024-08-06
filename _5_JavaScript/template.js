@@ -68,26 +68,71 @@
 //////////////////////////////////////////////////////////
 
 // Math
-let user=Number(prompt("Lütfen 1. sayıyı giriniz"));
-console.log("Pi: "+Math.PI);
-console.log("E: "+Math.E);
-console.log("Mutlak Değer: "+Math.abs(user));
-console.log("Karekök: "+Math.sqrt(user));
-console.log("Kare: "+Math.pow(user,2));
+// let user=Number(prompt("Lütfen 1. sayıyı giriniz"));
+// console.log("Pi: "+Math.PI);
+// console.log("E: "+Math.E);
+// console.log("Mutlak Değer: "+Math.abs(user));
+// console.log("Karekök: "+Math.sqrt(user));
+// console.log("Kare: "+Math.pow(user,2));
 
-console.log("Yuvarla: "+Math.round(7.3));
-console.log("Yuvarla: "+Math.round(7.5));
-console.log("Aşağı Yuvarla: "+Math.floor(8.9));
-console.log("Yukarı Yuvarla: "+Math.ceil(8.1));
+// console.log("Yuvarla: "+Math.round(7.3));
+// console.log("Yuvarla: "+Math.round(7.5));
+// console.log("Aşağı Yuvarla: "+Math.floor(8.9));
+// console.log("Yukarı Yuvarla: "+Math.ceil(8.1));
 
-console.log("Rastgele: "+Math.random());
-console.log("Rastgele: "+Math.random()*4+1);
-console.log("Rastgele: "+Math.floor(Math.random()*4+1));
-
-
-console.log("Sin: "+Math.sin(45));
+// console.log("Rastgele: "+Math.random());
+// console.log("Rastgele: "+Math.random()*4+1);
+// console.log("Rastgele: "+Math.floor(Math.random()*4+1));
 
 
+// console.log("Sin: "+Math.sin(45));
+//////////////////////////////////////////////////////////
 
+// TypeOf
+// let variable1=44;
+// console.log(typeof variable1);
 
+// variable1=String(44);
+// console.log(typeof variable1);
 
+// variable1=true;
+// console.log(typeof variable1);
+
+// variable1=()=>{};
+// console.log(typeof variable1);
+//////////////////////////////////////////////////////////
+
+// Undefined
+// let data;
+// console.log(data);
+//////////////////////////////////////////////////////////
+
+// NaN
+// let data1=44/22;
+// console.log(data1);
+
+// data1=44/"22";
+// console.log(data1);
+
+// data1=44/"abc";
+// console.log(data1);
+
+// if(isNaN(data1)){
+//     console.log("Lütfen sayı giriniz.");
+// }
+//////////////////////////////////////////////////////////
+
+// Infinity
+// console.log(0/44);
+// console.log(44/0);
+//////////////////////////////////////////////////////////
+
+// Escape
+let escape1="1.Alan '2.Alan";
+console.log(escape1);
+
+escape1='1.Alan \'2.Alan';
+console.log(escape1);
+
+escape1="1.Alan \n\t'2.Alan\u00a9";
+console.log(escape1);
