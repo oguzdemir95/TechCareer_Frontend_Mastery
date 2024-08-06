@@ -128,11 +128,67 @@
 //////////////////////////////////////////////////////////
 
 // Escape
-let escape1="1.Alan '2.Alan";
-console.log(escape1);
+// let escape1="1.Alan '2.Alan";
+// console.log(escape1);
 
-escape1='1.Alan \'2.Alan';
-console.log(escape1);
+// escape1='1.Alan \'2.Alan';
+// console.log(escape1);
 
-escape1="1.Alan \n\t'2.Alan\u00a9";
-console.log(escape1);
+// escape1="1.Alan \n\t'2.Alan\u00a9";
+// console.log(escape1);
+//////////////////////////////////////////////////////////
+
+// Sayısal İşlemler
+let number1=55.44;
+// document.writeln(number1);
+console.log(number1);
+console.log(typeof(number1));
+console.log(Number(number1));
+console.log(parseInt(number1));
+console.log(parseFloat(number1));
+
+// Normal Gösterim
+let bilimsel=1300000;
+console.log(bilimsel);
+
+// Bilimsel Gösterim
+bilimsel=13E+5;
+console.log(bilimsel);
+bilimsel=13E-5;
+console.log(bilimsel);
+
+const number2=1453.1234;
+
+console.log(number2.toExponential(1));
+
+// 10'luk Tabana Çevirme
+let binary=0b0100101101010;
+console.log(binary);
+
+let octa=0o76511;
+console.log(octa);
+
+let decimal=123456;
+console.log(decimal);
+
+let hexadecimal=0xfbc12;
+console.log(hexadecimal);
+
+// 10'luk Tabandan Çevirme
+let number3=4444;
+let binary3=number3.toString(2);
+console.log(binary3);
+
+let octa3=number3.toString(8);
+console.log(octa3);
+
+let hexa3=number3.toString(16);
+console.log(hexa3);
+
+// Fixed
+const number4=1234.56789
+console.log(number4.toFixed(2));
+
+
+
+
