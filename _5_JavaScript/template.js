@@ -139,55 +139,95 @@
 //////////////////////////////////////////////////////////
 
 // Sayısal İşlemler
-let number1=55.44;
-// document.writeln(number1);
-console.log(number1);
-console.log(typeof(number1));
-console.log(Number(number1));
-console.log(parseInt(number1));
-console.log(parseFloat(number1));
+// let number1=55.44;
+// // document.writeln(number1);
+// console.log(number1);
+// console.log(typeof(number1));
+// console.log(Number(number1));
+// console.log(parseInt(number1));
+// console.log(parseFloat(number1));
 
-// Normal Gösterim
-let bilimsel=1300000;
-console.log(bilimsel);
+// // Normal Gösterim
+// let bilimsel=1300000;
+// console.log(bilimsel);
 
-// Bilimsel Gösterim
-bilimsel=13E+5;
-console.log(bilimsel);
-bilimsel=13E-5;
-console.log(bilimsel);
+// // Bilimsel Gösterim
+// bilimsel=13E+5;
+// console.log(bilimsel);
+// bilimsel=13E-5;
+// console.log(bilimsel);
 
-const number2=1453.1234;
+// const number2=1453.1234;
 
-console.log(number2.toExponential(1));
+// console.log(number2.toExponential(1));
 
-// 10'luk Tabana Çevirme
-let binary=0b0100101101010;
-console.log(binary);
+// // 10'luk Tabana Çevirme
+// let binary=0b0100101101010;
+// console.log(binary);
 
-let octa=0o76511;
-console.log(octa);
+// let octa=0o76511;
+// console.log(octa);
 
-let decimal=123456;
-console.log(decimal);
+// let decimal=123456;
+// console.log(decimal);
 
-let hexadecimal=0xfbc12;
-console.log(hexadecimal);
+// let hexadecimal=0xfbc12;
+// console.log(hexadecimal);
 
-// 10'luk Tabandan Çevirme
-let number3=4444;
-let binary3=number3.toString(2);
-console.log(binary3);
+// // 10'luk Tabandan Çevirme
+// let number3=4444;
+// let binary3=number3.toString(2);
+// console.log(binary3);
 
-let octa3=number3.toString(8);
-console.log(octa3);
+// let octa3=number3.toString(8);
+// console.log(octa3);
 
-let hexa3=number3.toString(16);
-console.log(hexa3);
+// let hexa3=number3.toString(16);
+// console.log(hexa3);
 
-// Fixed
-const number4=1234.56789
-console.log(number4.toFixed(2));
+// // Fixed
+// const number4=1234.56789
+// console.log(number4.toFixed(2));
+//////////////////////////////////////////////////////////
+
+// Metinsel İşlemler
+let vocabulary="Html5, CSS3, javascript, jquery, Html5";
+vocabulary=String(vocabulary);
+vocabulary=vocabulary.trim();
+
+console.log(vocabulary);
+console.log(vocabulary.length);
+console.log(vocabulary.trim());
+
+console.log(vocabulary.toUpperCase());
+console.log(vocabulary.toLowerCase());
+
+console.log(vocabulary.startsWith("H"));
+console.log(vocabulary.endsWith("y"));
+
+console.log(vocabulary.concat("-INC"));
+console.log(vocabulary.replace("jquery","React JS"));
+
+console.log(vocabulary.substring(4));
+console.log(vocabulary.substring(1,3));
+
+console.log(vocabulary.indexOf("Html5"));
+console.log(vocabulary.lastIndexOf("Html5"));
+
+console.log(vocabulary.charAt(0));
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
