@@ -191,36 +191,85 @@
 //////////////////////////////////////////////////////////
 
 // Metinsel İşlemler
-let vocabulary="Html5, CSS3, javascript, jquery, Html5";
-vocabulary=String(vocabulary);
-vocabulary=vocabulary.trim();
+// let vocabulary="Html5, CSS3, javascript, jquery, Html5";
+// vocabulary=String(vocabulary);
+// vocabulary=vocabulary.trim();
 
-console.log(vocabulary);
-console.log(vocabulary.length);
-console.log(vocabulary.trim());
+// console.log(vocabulary);
+// console.log(vocabulary.length);
+// console.log(vocabulary.trim());
 
-console.log(vocabulary.toUpperCase());
-console.log(vocabulary.toLowerCase());
+// console.log(vocabulary.toUpperCase());
+// console.log(vocabulary.toLowerCase());
 
-console.log(vocabulary.startsWith("H"));
-console.log(vocabulary.endsWith("y"));
+// console.log(vocabulary.startsWith("H"));
+// console.log(vocabulary.endsWith("y"));
 
-console.log(vocabulary.concat("-INC"));
-console.log(vocabulary.replace("jquery","React JS"));
+// console.log(vocabulary.concat("-INC"));
+// console.log(vocabulary.replace("jquery","React JS"));
 
-console.log(vocabulary.substring(4));
-console.log(vocabulary.substring(1,3));
+// console.log(vocabulary.substring(4));
+// console.log(vocabulary.substring(1,3));
 
-console.log(vocabulary.indexOf("Html5"));
-console.log(vocabulary.lastIndexOf("Html5"));
+// console.log(vocabulary.indexOf("Html5"));
+// console.log(vocabulary.lastIndexOf("Html5"));
 
-console.log(vocabulary.charAt(0));
+// console.log(vocabulary.charAt(0));
+//////////////////////////////////////////////////////////
 
+// Functions
+// function parametresizReturnsuz(){
+//     console.log("Parametresiz Returnsuz");
+    
+// }
+// parametresizReturnsuz();
 
+// function parametreliReturnsuz(adi,soyadi,sehir){
+//     console.log("Parametreli Returnsuz: "+adi+" "+soyadi+" "+sehir);
+    
+// }
+// parametreliReturnsuz("Oğuzhan","Demir","Ankara");
 
+// function parametresizReturnlu(){
+//     return "Parametresiz Returnlu";
+    
+// }
+// const data3=parametresizReturnlu();
+// console.log(data3);
 
+// function parametreliReturnlu(adi,soyadi,sehir){
+//     // return "Parametresiz Returnlu" + " "+adi+" "+soyadi+" "+sehir;
+//     return `Parametresiz Returnlu:  ${adi} ${soyadi} ${sehir}`;
 
+// }
+// const data4=parametreliReturnlu("Oğuzhan","Demir","Ankara");
+// console.log(data4);
+///////////////////////////////////////////////////////////////////
+(function(){
+    console.log("Immedia Anonymous Function");
+})();
 
+(()=>{
+    console.log("Immedia Arrow Function");
+})();
+
+// Normal Function
+// function normal(){
+//     console.log("Normal Function");
+// }
+// normal();
+
+// // Anonymous Function
+// const anonymousFunction = function(){
+//     console.log("Anonymous Function");
+// }
+// anonymousFunction();
+
+// // Anonymous Function
+// const arrowFunction = ()=>{
+//     console.log("Arrow Function");
+// }
+// arrowFunction();
 
 
 
