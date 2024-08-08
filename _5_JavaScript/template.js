@@ -342,40 +342,60 @@
 ///////////////////////////////////////////////////////
 
 // Loops
-let loop1=()=>{
-    for(let i=0;i<10;i++)
-    {
-        console.log(i);
+// let loop1=()=>{
+//     for(let i=0;i<10;i++)
+//     {
+//         console.log(i);
+//     }
+//     // for(;;){} => Sonsuz döngü
+// };
+// loop1();
+
+// let loop2=()=>{
+//     let i=0;
+//     while(i<10)
+//     {
+//         console.log(i);
+//         i++;
+//     }
+//     // while(true){} => Sonsuz döngü
+// };
+// loop2();
+
+// let loop3=()=>{
+//     let i=0;
+//     do{
+//         console.log(i);
+//         i++;
+//     }
+//     while(i<10)
+//         {
+//             console.log(i);
+//             i++;
+//         }
+// }
+// loop3();
+///////////////////////////////////////////////////////
+
+// Exception Handling
+let exceptionHandling=()=>{
+    
+    
+    try {
+        alerx("Popup");
+        
+    } catch (err) {
+        console.error(err);
+        console.error(err.message);
+
     }
-    // for(;;){} => Sonsuz döngü
+    finally{
+        console.log("Port close");
+    }
+    console.log("Son satır mutlaka görünsün.");
+    throw new Error("Hata44");
 };
-loop1();
-
-let loop2=()=>{
-    let i=0;
-    while(i<10)
-    {
-        console.log(i);
-        i++;
-    }
-    // while(true){} => Sonsuz döngü
-};
-loop2();
-
-let loop3=()=>{
-    let i=0;
-    do{
-        console.log(i);
-        i++;
-    }
-    while(i<10)
-        {
-            console.log(i);
-            i++;
-        }
-}
-loop3();
-
+exceptionHandling();
 
 
 
