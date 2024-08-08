@@ -220,19 +220,19 @@
 // Functions
 // function parametresizReturnsuz(){
 //     console.log("Parametresiz Returnsuz");
-    
+
 // }
 // parametresizReturnsuz();
 
 // function parametreliReturnsuz(adi,soyadi,sehir){
 //     console.log("Parametreli Returnsuz: "+adi+" "+soyadi+" "+sehir);
-    
+
 // }
 // parametreliReturnsuz("Oğuzhan","Demir","Ankara");
 
 // function parametresizReturnlu(){
 //     return "Parametresiz Returnlu";
-    
+
 // }
 // const data3=parametresizReturnlu();
 // console.log(data3);
@@ -245,13 +245,13 @@
 // const data4=parametreliReturnlu("Oğuzhan","Demir","Ankara");
 // console.log(data4);
 ///////////////////////////////////////////////////////////////////
-(function(){
-    console.log("Immedia Anonymous Function");
-})();
+// (function(){
+//     console.log("Immedia Anonymous Function");
+// })();
 
-(()=>{
-    console.log("Immedia Arrow Function");
-})();
+// (()=>{
+//     console.log("Immedia Arrow Function");
+// })();
 
 // Normal Function
 // function normal(){
@@ -270,13 +270,111 @@
 //     console.log("Arrow Function");
 // }
 // arrowFunction();
+//////////////////////////////////////////////////////////
 
+// Conditionals
+// let conditional1 = () => {
+//     const number = 10;
+//     if (number > 5) {
+//         console.log(number + " sayısı 5'ten büyüktür.");
+//     }
+//     else {
+//         console.log(number + " sayısı 5'ten küçüktür.");
+//     }
+// }
+// conditional1();
 
+// let conditional2 = () => {
+//     const number = 3;
+//     let result = (number > 5) ? number + " sayısı 5'ten büyüktür."
+//         : number + " sayısı 5'ten küçüktür.";
+//     console.log(result);
+// }
+// conditional2();
 
+// let conditional3 = () => {
+//     const number = 5;
+//     if (number == 1) {
+//         console.log("Sayı 1'e eşittir.");
+//     }
+//     else if (number == 2) {
+//         console.log("Sayı 2'ye eşittir.");
+//     }
+//     else if (number == 3) {
+//         console.log("Sayı 3'e eşittir.");
+//     }
+//     else if (number == 4) {
+//         console.log("Sayı 4'e eşittir.");
+//     }
+//     else if (number == 5) {
+//         console.log("Sayı 5'e eşittir.");
+//     }
+//     else {
+//         console.log("Sayı 5'ten farklıdır.");
+//     }
+// }
+// conditional3();
 
+// let conditional4 = () => {
+//     const number = 5;
+//     switch (number) {
+//         case 1:
+//             console.log("Sayı 1'e eşittir.");
+//             break;
+//         case 2:
+//             console.log("Sayı 2'ye eşittir.");
+//             break;
+//         case 3:
+//             console.log("Sayı 3'e eşittir.");
+//             break;
+//         case 4:
+//             console.log("Sayı 4'e eşittir.");
+//             break;
+//         case 5:
+//             console.log("Sayı 5'e eşittir.");
+//             break;
+//         default:
+//             console.log("Sayı 5'ten farklıdır.");
+//             break;
+//     }
+// }
+// conditional4();
+///////////////////////////////////////////////////////
 
+// Loops
+let loop1=()=>{
+    for(let i=0;i<10;i++)
+    {
+        console.log(i);
+    }
+    // for(;;){} => Sonsuz döngü
+};
+loop1();
 
+let loop2=()=>{
+    let i=0;
+    while(i<10)
+    {
+        console.log(i);
+        i++;
+    }
+    // while(true){} => Sonsuz döngü
+};
+loop2();
 
+let loop3=()=>{
+    let i=0;
+    do{
+        console.log(i);
+        i++;
+    }
+    while(i<10)
+        {
+            console.log(i);
+            i++;
+        }
+}
+loop3();
 
 
 
