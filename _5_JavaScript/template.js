@@ -378,24 +378,38 @@
 ///////////////////////////////////////////////////////
 
 // Exception Handling
-let exceptionHandling=()=>{
+// let exceptionHandling=()=>{
     
     
-    try {
-        alerx("Popup");
+//     try {
+//         alerx("Popup");
         
-    } catch (err) {
-        console.error(err);
-        console.error(err.message);
+//     } catch (err) {
+//         console.error(err);
+//         console.error(err.message);
 
-    }
-    finally{
-        console.log("Port close");
-    }
-    console.log("Son satır mutlaka görünsün.");
-    throw new Error("Hata44");
-};
-exceptionHandling();
+//     }
+//     finally{
+//         console.log("Port close");
+//     }
+//     console.log("Son satır mutlaka görünsün.");
+//     throw new Error("Hata44");
+// };
+// exceptionHandling();
+///////////////////////////////////////////////////////
 
+// Set TimeOut
+let setTimeOutFunction=()=>{
+    setTimeout(() => {
+        console.log("Çalışsın");
+    }, 3000)
+}
+setTimeOutFunction();
 
-
+// Set Interval
+let setIntervalFunction=()=>{
+    setInterval(() => {
+        console.log("Sürekli Çalışsın");
+    }, 1000)
+}
+setIntervalFunction();
