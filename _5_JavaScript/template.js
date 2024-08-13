@@ -379,11 +379,11 @@
 
 // Exception Handling
 // let exceptionHandling=()=>{
-    
-    
+
+
 //     try {
 //         alerx("Popup");
-        
+
 //     } catch (err) {
 //         console.error(err);
 //         console.error(err.message);
@@ -464,50 +464,67 @@
 //         } catch (error) {
 //             console.log(error.message);
 //         }
-        
+
 //     }
 // }
 // asynAwaitFunction();
 /////////////////////////////////////////////////////
 
 // Arrays
-let diziFunction=()=>{
-    let dizi=[1,4,3,5,6,2];
-    // dizi.sort();
-    // dizi.sort().reverse();
+// let diziFunction=()=>{
+//     let dizi=[1,4,3,5,6,2];
+//     // dizi.sort();
+//     // dizi.sort().reverse();
 
-    console.log(dizi);
-    console.log(dizi.length);
-    console.log(dizi[dizi.length-1]);
+//     console.log(dizi);
+//     console.log(dizi.length);
+//     console.log(dizi[dizi.length-1]);
 
-    let sum=0;
-    for(let i=0;i<dizi.length;i++){
-        sum+=i;
+//     let sum=0;
+//     for(let i=0;i<dizi.length;i++){
+//         sum+=i;
+//     }
+//     console.log(sum);
+
+//     // For-In
+//     for (const temp in dizi) {
+//         console.log(`${temp}=>${dizi[temp]}`);
+//     }
+//     dizi.push(99);
+//     dizi.unshift(11);
+//     dizi.pop(0);
+//     dizi.shift();
+
+
+//     //For-Of
+//     for (const temp of dizi) {
+//         console.log(`${temp}`);
+//     }
+
+//     dizi.map((value,index,array)=>{
+
+//         return value=value*2;
+//     }).filter((value,index,array)=>{
+
+//         return value>=value*2;
+//     })
+
+// };
+// diziFunction();
+///////////////////////////////////////////////
+
+// Class
+
+const classExample = () => {
+    class Person {
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        greet() {
+            console.log(`Merhaba ${this.name}, yaş ${this.age}`);
+        }
     }
-    console.log(sum);
-
-    // For-In
-    for (const temp in dizi) {
-        console.log(`${temp}=>${dizi[temp]}`);
-    }
-    dizi.push(99);
-    dizi.unshift(11);
-    dizi.pop(0);
-    dizi.shift();
-
-    
-    //For-Of
-    for (const temp of dizi) {
-        console.log(`${temp}`);
-    }
-
-    dizi.map((value,index,array)=>{
-        
-        return value=value*2;
-    }).filter((value,index,array)=>{
-        
-        return value>=value*2;
-    })
-
+    let personData1=new Person("Oğuzhan",28);
+    personData1.greet();
 };
-diziFunction();
