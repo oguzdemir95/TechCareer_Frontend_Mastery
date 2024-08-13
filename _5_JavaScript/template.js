@@ -515,16 +515,60 @@
 
 // Class
 
-const classExample = () => {
-    class Person {
-        constructor(name, age) {
-            this.name = name;
-            this.age = age;
+// const classExample = () => {
+//     class Person {
+//         constructor(name, age) {
+//             this.name = name;
+//             this.age = age;
+//         }
+//         greet() {
+//             console.log(`Merhaba ${this.name}, yaş ${this.age}`);
+//         }
+//     }
+//     let personData1=new Person("Oğuzhan",28);
+//     personData1.greet();
+// };
+///////////////////////////////////////////////
+
+// Object
+const objectExample=()=>{
+    let city={
+        name:"Ankara",
+        age:20,
+        state:["Çankaya","Yenimahalle","Altındağ"],
+        getInfo:function(){
+            return `Şehir Adı: ${this.name} Yaş: ${this.age} İlçeler: ${this.state}`;
+
         }
-        greet() {
-            console.log(`Merhaba ${this.name}, yaş ${this.age}`);
-        }
-    }
-    let personData1=new Person("Oğuzhan",28);
-    personData1.greet();
+        
+    };
+    console.log(city);
+        console.log(city.name);
+        console.log(city.age);
+        console.log(city.state);
+        console.log(city.state[0]);
+
+        const data=city.getInfo();
+        console.log(data);
 };
+objectExample();
+///////////////////////////////////////////////
+
+// InstanceOf
+const instanceOfFunction=()=>{
+    function Hayvan(tur){
+        this.tur=tur;
+    }
+
+    function Kopek(cins){
+        this.cins=cins;
+    }
+
+    Kopek.prototype=new Hayvan();
+    let karabas=new Kopek("Karabaş Kangal");
+
+    console.log(karabas instanceof Kopek);
+    console.log(karabas instanceof Hayvan);
+
+}
+instanceOfFunction();
