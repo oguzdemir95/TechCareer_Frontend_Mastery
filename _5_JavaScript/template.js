@@ -399,17 +399,72 @@
 ///////////////////////////////////////////////////////
 
 // Set TimeOut
-let setTimeOutFunction=()=>{
-    setTimeout(() => {
-        console.log("Çalışsın");
-    }, 3000)
-}
-setTimeOutFunction();
+// let setTimeOutFunction=()=>{
+//     setTimeout(() => {
+//         console.log("Çalışsın");
+//     }, 3000)
+// }
+// setTimeOutFunction();
 
-// Set Interval
-let setIntervalFunction=()=>{
-    setInterval(() => {
-        console.log("Sürekli Çalışsın");
-    }, 1000)
+// // Set Interval
+// let setIntervalFunction=()=>{
+//     setInterval(() => {
+//         console.log("Sürekli Çalışsın");
+//     }, 1000)
+// }
+// setIntervalFunction();
+///////////////////////////////////////////////////////
+
+// Asenkron
+// 1 - Callback Function
+const callbackFunction=()=>{
+    // 1. Alan
+    let hesapla=(x,y,callback)=>{
+        let result=x+y;
+        callback(result);
+    };
+
+    // 2. Alan
+    let goster=(data)=>{
+        console.log("Sonuç: "+data);
+    };
+
+    hesapla(5,3,goster);
+};
+callbackFunction();
+///////////////////////////////////////////////////////
+
+// 2 - Promise Function
+const promiseFunction=()=>{
+    const myPromise=new Promise((resolve,reject)=>{
+        let number=5 //Math.floor(Math.random()*10);
+        if(number%2==0){
+            resolve(number);
+            console.log("Çift sayı");
+        }
+        else{
+            reject(number);
+            console.log("Tek sayı");
+        }
+    }).then(()=>{
+        console.log("Then çalıştı");
+    }).catch((err)=>{
+        console.log("Catch çalıştı");
+        console.error(err.message);
+    })
+};
+promiseFunction();
+
+// 3 - Await Function
+const asynAwaitFunction=()=>{
+    async function myFunction(){
+        try {
+            let response=await fetch('')
+        let result=response.json();
+        } catch (error) {
+            console.log(error.message);
+        }
+        
+    }
 }
-setIntervalFunction();
+asynAwaitFunction();
