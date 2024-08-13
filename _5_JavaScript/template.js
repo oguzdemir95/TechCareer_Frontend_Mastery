@@ -415,56 +415,99 @@
 // setIntervalFunction();
 ///////////////////////////////////////////////////////
 
-// Asenkron
-// 1 - Callback Function
-const callbackFunction=()=>{
-    // 1. Alan
-    let hesapla=(x,y,callback)=>{
-        let result=x+y;
-        callback(result);
-    };
+// // Asenkron
+// // 1 - Callback Function
+// const callbackFunction=()=>{
+//     // 1. Alan
+//     let hesapla=(x,y,callback)=>{
+//         let result=x+y;
+//         callback(result);
+//     };
 
-    // 2. Alan
-    let goster=(data)=>{
-        console.log("Sonuç: "+data);
-    };
+//     // 2. Alan
+//     let goster=(data)=>{
+//         console.log("Sonuç: "+data);
+//     };
 
-    hesapla(5,3,goster);
-};
-callbackFunction();
-///////////////////////////////////////////////////////
+//     hesapla(5,3,goster);
+// };
+// callbackFunction();
+// ///////////////////////////////////////////////////////
 
-// 2 - Promise Function
-const promiseFunction=()=>{
-    const myPromise=new Promise((resolve,reject)=>{
-        let number=5 //Math.floor(Math.random()*10);
-        if(number%2==0){
-            resolve(number);
-            console.log("Çift sayı");
-        }
-        else{
-            reject(number);
-            console.log("Tek sayı");
-        }
-    }).then(()=>{
-        console.log("Then çalıştı");
-    }).catch((err)=>{
-        console.log("Catch çalıştı");
-        console.error(err.message);
-    })
-};
-promiseFunction();
+// // 2 - Promise Function
+// const promiseFunction=()=>{
+//     const myPromise=new Promise((resolve,reject)=>{
+//         let number=5 //Math.floor(Math.random()*10);
+//         if(number%2==0){
+//             resolve(number);
+//             console.log("Çift sayı");
+//         }
+//         else{
+//             reject(number);
+//             console.log("Tek sayı");
+//         }
+//     }).then(()=>{
+//         console.log("Then çalıştı");
+//     }).catch((err)=>{
+//         console.log("Catch çalıştı");
+//         console.error(err.message);
+//     })
+// };
+// promiseFunction();
 
-// 3 - Await Function
-const asynAwaitFunction=()=>{
-    async function myFunction(){
-        try {
-            let response=await fetch('')
-        let result=response.json();
-        } catch (error) {
-            console.log(error.message);
-        }
+// // 3 - Await Function
+// const asynAwaitFunction=()=>{
+//     async function myFunction(){
+//         try {
+//             let response=await fetch('')
+//         let result=response.json();
+//         } catch (error) {
+//             console.log(error.message);
+//         }
         
+//     }
+// }
+// asynAwaitFunction();
+/////////////////////////////////////////////////////
+
+// Arrays
+let diziFunction=()=>{
+    let dizi=[1,4,3,5,6,2];
+    // dizi.sort();
+    // dizi.sort().reverse();
+
+    console.log(dizi);
+    console.log(dizi.length);
+    console.log(dizi[dizi.length-1]);
+
+    let sum=0;
+    for(let i=0;i<dizi.length;i++){
+        sum+=i;
     }
-}
-asynAwaitFunction();
+    console.log(sum);
+
+    // For-In
+    for (const temp in dizi) {
+        console.log(`${temp}=>${dizi[temp]}`);
+    }
+    dizi.push(99);
+    dizi.unshift(11);
+    dizi.pop(0);
+    dizi.shift();
+
+    
+    //For-Of
+    for (const temp of dizi) {
+        console.log(`${temp}`);
+    }
+
+    dizi.map((value,index,array)=>{
+        
+        return value=value*2;
+    }).filter((value,index,array)=>{
+        
+        return value>=value*2;
+    })
+
+};
+diziFunction();
