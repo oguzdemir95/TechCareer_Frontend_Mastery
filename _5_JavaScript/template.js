@@ -531,44 +531,76 @@
 ///////////////////////////////////////////////
 
 // Object
-const objectExample=()=>{
-    let city={
-        name:"Ankara",
-        age:20,
-        state:["Çankaya","Yenimahalle","Altındağ"],
-        getInfo:function(){
-            return `Şehir Adı: ${this.name} Yaş: ${this.age} İlçeler: ${this.state}`;
+// const objectExample=()=>{
+//     let city={
+//         name:"Ankara",
+//         age:20,
+//         state:["Çankaya","Yenimahalle","Altındağ"],
+//         getInfo:function(){
+//             return `Şehir Adı: ${this.name} Yaş: ${this.age} İlçeler: ${this.state}`;
 
-        }
+//         }
         
-    };
-    console.log(city);
-        console.log(city.name);
-        console.log(city.age);
-        console.log(city.state);
-        console.log(city.state[0]);
+//     };
+//     console.log(city);
+//         console.log(city.name);
+//         console.log(city.age);
+//         console.log(city.state);
+//         console.log(city.state[0]);
 
-        const data=city.getInfo();
-        console.log(data);
-};
-objectExample();
+//         const data=city.getInfo();
+//         console.log(data);
+// };
+// objectExample();
 ///////////////////////////////////////////////
 
 // InstanceOf
-const instanceOfFunction=()=>{
-    function Hayvan(tur){
-        this.tur=tur;
-    }
+// const instanceOfFunction=()=>{
+//     function Hayvan(tur){
+//         this.tur=tur;
+//     }
 
-    function Kopek(cins){
-        this.cins=cins;
-    }
+//     function Kopek(cins){
+//         this.cins=cins;
+//     }
 
-    Kopek.prototype=new Hayvan();
-    let karabas=new Kopek("Karabaş Kangal");
+//     Kopek.prototype=new Hayvan();
+//     let karabas=new Kopek("Karabaş Kangal");
 
-    console.log(karabas instanceof Kopek);
-    console.log(karabas instanceof Hayvan);
+//     console.log(karabas instanceof Kopek);
+//     console.log(karabas instanceof Hayvan);
 
+// }
+// instanceOfFunction();
+///////////////////////////////////////////////
+
+// Local Storage
+const localStorageFunction=()=>{
+    localStorage.setItem("unique_name","Harun");
+    const username=localStorage.getItem("unique_name");
+    console.log(username);
+    localStorage.removeItem("unique_name");
+    localStorage.clear();
 }
-instanceOfFunction();
+localStorageFunction();
+
+const greet=()=>{
+    alert("Event çalıştı");
+}
+/////////////////////////////////////
+// Event
+const parag_change=()=>{
+    //alert("Event Çalıştı")
+    let parag=document.getElementById("parag_id");
+    //parag.innerHTML="<b><mark>İnner Html Değiştirdi</mark></b>";
+    parag.innerText="<b><mark>İnner Html Değiştirdi</mark></b>";
+    parag.style.color="white";
+    parag.style.backgroundColor="black";
+    parag.style.margin="1rem";
+    parag.style.padding="1rem";
+  }
+  
+  // AddEventListener
+  parag_id.addEventListener("click",()=>{
+    alert("Kopyalama");
+  });
