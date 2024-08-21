@@ -56,3 +56,34 @@ $(document).ready(function () {
   });
 });
 
+// Event
+$(document).ready(function () {
+  $("#click_event_id").click(function () {
+    alert("Event Çalıştı")
+  });
+});
+
+$(document).ready(function () {
+  $("#dblclick_event_id").dblclick(function () {
+    alert("Event Çalıştı")
+  });
+});
+
+// Mouse
+$(document).ready(function () {
+  $("#mouse_id").mouseup(function () {
+    alert("Mouse Çalıştı");
+    $(this).css("background-color","red")
+  });
+});
+
+// Keyboard
+$(document).ready(function () {
+  $("#keyboard_id").keydown(function () {
+    alert("Keyboard Çalıştı");
+    $(this).css("background-color","yellow")
+  });
+});
+
+
+
