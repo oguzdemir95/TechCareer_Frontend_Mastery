@@ -37,6 +37,36 @@
 
 <body class="container">
     <!-- Start Code -->
+     <form id="login_form" action="" method="post">
+        <label for="uemail">Email</label>
+        <input type="text" id="uemail" name="uemail">
+        <br>
+        <label for="upassword">Password</label>
+        <input type="text" id="upassword" name="upassword">
+        <br>
+        <button id="submit_id" type="submit">Gönder</button>
+     </form>
+     <script>
+        $(document).ready(function(){
+            $("#login_form").submit(function(event){
+                event.preventDefault();
+                // Form verilerini al
+                let allFormData=$(this).serialize();
+
+                // Form verileri
+                console.log(allFormData);
+            })
+
+            $("#submit_id").click(function(){
+                var email=$.trim($("#uemail").val());
+                var password=jQuery.trim($("#upassword").val());
+                alert("Email: "+email+" Password: "+password);
+                console.log(`Email: ${email}\n Password: ${password}`);
+            })
+        });
+     </script>
+     <br><br>
+     <hr>
     <button id="mouse_id">Mouse</button>
     <button id="keyboard_id">Keyboard</button>
 
