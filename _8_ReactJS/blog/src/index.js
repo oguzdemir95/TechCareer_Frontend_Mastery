@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import ClassComponentsTutorials from './components/ClassComponentsTutorials';
+// import App from './App';
+// import ClassComponentsTutorials from './components/ClassComponentsTutorials';
 import reportWebVitals from './reportWebVitals';
+import FunctionComponentsTutorials from './components/FunctionComponentsTutorials';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <FunctionComponentsTutorials/>
     {/* <App /> */}
-    <ClassComponentsTutorials/>
+    {/* <ClassComponentsTutorials/> */}
   </React.StrictMode>
 );
 
