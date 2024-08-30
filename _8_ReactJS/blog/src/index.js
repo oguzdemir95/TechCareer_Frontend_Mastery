@@ -1,15 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {BrowserRouter} from 'react-router-dom';
 import './index.css';
 // import App from './App';
 // import ClassComponentsTutorials from './components/ClassComponentsTutorials';
 import reportWebVitals from './reportWebVitals';
-import FunctionComponentsTutorials from './components/FunctionComponentsTutorials';
+// import FunctionComponentsTutorials from './components/FunctionComponentsTutorials';
+import RouterBlog from './RouterBlog';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FunctionComponentsTutorials/>
+    <BrowserRouter>
+    <RouterBlog/>
+    </BrowserRouter>
+    
+    {/* <FunctionComponentsTutorials/> */}
     {/* <App /> */}
     {/* <ClassComponentsTutorials/> */}
   </React.StrictMode>
