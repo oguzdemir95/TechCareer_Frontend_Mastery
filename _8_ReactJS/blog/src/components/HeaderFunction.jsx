@@ -1,6 +1,20 @@
 import React from 'react'
-
+import '../style.css'
 export default function HeaderFunction(props) {
+
+  {/* start Header  */ }
+  {/* 1.YOL(Styling) */ }
+  {/* <header style={{color:'blue'}}></header> */ }
+
+  {/* 2.YOL(Styling) */ }
+  // const headerCss={
+  //   "height":"50vh",
+  //   "width":"100%",
+  //   "background-color":"black",
+  //   "color":"white",
+  //   "padding-top":"5rem"
+  // }
+
   return (
     <>
     <nav
@@ -69,7 +83,22 @@ export default function HeaderFunction(props) {
         </div>
       </div>
     </nav>
-    
+    {/* end Nav  */}
+
+
+      {/* start Header  */}
+      {/* 1.YOL(Styling) */}
+      {/* <header style={{color:'blue'}}></header> */}
+      {/* 2.YOL(Styling) */}
+
+      {/*3.YOL*/}
+      <header className="backgroundExternal">
+        <p className='specialParag'>React Eğitimi</p>
+      </header>
+
+      {/* <img src={background} alt="" srcset="" /> */}
+
+      {/* end Header  */}
     </>
   )
 }

@@ -77,9 +77,9 @@ export default function FooterFunction() {
     className="text-center p-3"
     style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
   >
-    © 2020 Copyright:
-    <a className="text-body" href="https://mdbootstrap.com/">
-      MDBootstrap.com
+    © 2024 Copyright:
+    <a className="text-body" target='_blank' href="https://techcareer.net/">
+      TechCareer
     </a>
   </div>
   {/* Copyright */}
