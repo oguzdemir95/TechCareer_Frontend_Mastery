@@ -1,11 +1,30 @@
 import React from 'react'
 
 import './main.css'
+import {useContext} from 'react';
+import {ThemeContext} from '../ThemeContext';
+
 
 export default function MainFunction() {
+
+  // Context Api
+  const {theme,toggleTheme}=useContext(ThemeContext);
+  const styles={
+    light:{
+      background:"white",
+      color:"black",
+      padding:"2rem"
+    },
+    dark:{
+      background:"black",
+      color:"white",
+      padding:"2rem"
+    }
+  }
+  
   return (
     <React.Fragment>
-      <br /><br /><br /><br />
+      <div style={styles[theme]}>
       <p style={{fontSize:"1rem", textAlign:"justify"}}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur voluptates eius quas ad accusamus adipisci hic non, labore praesentium a suscipit eveniet quia inventore autem ex nisi. Odio, ratione.
         Explicabo aliquam unde quaerat tempora, eos veritatis officia beatae odio doloremque praesentium fuga mollitia quis quidem. Ex dolore omnis error, neque, consequuntur commodi perferendis obcaecati tenetur aliquam odio magni adipisci.
@@ -15,6 +34,8 @@ export default function MainFunction() {
         Sapiente sunt distinctio fugiat a explicabo aspernatur blanditiis voluptatum aperiam nostrum facilis corporis doloribus molestiae accusantium amet ratione maiores, nemo aut asperiores delectus ipsum impedit, repellendus porro omnis atque? Et.
 
       </p>
+      <button onClick={toggleTheme}>Dark Mode</button>
+      </div>
     </React.Fragment>
   )
 }

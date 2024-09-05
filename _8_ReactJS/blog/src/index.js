@@ -7,12 +7,17 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 // import FunctionComponentsTutorials from './components/FunctionComponentsTutorials';
 import RouterBlog from './RouterBlog';
+import { ThemeProvider } from './ThemeContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    {/* Context Api import */}
+    <ThemeProvider>
     <RouterBlog/>
+    </ThemeProvider>
+    
     </BrowserRouter>
     
     {/* <FunctionComponentsTutorials/> */}

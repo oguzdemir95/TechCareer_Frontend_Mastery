@@ -1,6 +1,23 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import '../style.css'
+import { ThemeContext } from '../ThemeContext'
 export default function HeaderFunction(props) {
+
+  // Context Api
+  const {theme,toggleTheme}=useContext(ThemeContext);
+  const styles={
+    light:{
+      background:"white",
+      color:"black",
+      padding:"2rem"
+    },
+    dark:{
+      background:"black",
+      color:"white",
+      padding:"2rem"
+    }
+  }
+  
 
   {/* start Header  */ }
   {/* 1.YOL(Styling) */ }
@@ -79,7 +96,9 @@ export default function HeaderFunction(props) {
             >
               Search
             </button>
+            
           </form>
+          <button onClick={toggleTheme} className="btn btn-warning my-2 my-sm-0 ms-2">Dark Mode</button>
         </div>
       </div>
     </nav>
