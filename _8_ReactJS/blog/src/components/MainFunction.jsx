@@ -25,6 +25,7 @@ export default function MainFunction() {
   return (
     <React.Fragment>
       <div style={styles[theme]}>
+        <h2>{theme==="light"?'Light Theme':'Dark Theme'}</h2>
       <p style={{fontSize:"1rem", textAlign:"justify"}}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur voluptates eius quas ad accusamus adipisci hic non, labore praesentium a suscipit eveniet quia inventore autem ex nisi. Odio, ratione.
         Explicabo aliquam unde quaerat tempora, eos veritatis officia beatae odio doloremque praesentium fuga mollitia quis quidem. Ex dolore omnis error, neque, consequuntur commodi perferendis obcaecati tenetur aliquam odio magni adipisci.
@@ -34,7 +35,7 @@ export default function MainFunction() {
         Sapiente sunt distinctio fugiat a explicabo aspernatur blanditiis voluptatum aperiam nostrum facilis corporis doloribus molestiae accusantium amet ratione maiores, nemo aut asperiores delectus ipsum impedit, repellendus porro omnis atque? Et.
 
       </p>
-      <button onClick={toggleTheme}>Dark Mode</button>
+      
       </div>
     </React.Fragment>
   )

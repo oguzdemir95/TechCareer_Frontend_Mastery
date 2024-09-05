@@ -98,7 +98,7 @@ export default function HeaderFunction(props) {
             </button>
             
           </form>
-          <button onClick={toggleTheme} className="btn btn-warning my-2 my-sm-0 ms-2">Dark Mode</button>
+          <button onClick={toggleTheme} className="btn btn-warning my-2 my-sm-0 ms-2"><i class="fa-solid fa-circle-half-stroke"></i></button>
         </div>
       </div>
     </nav>
