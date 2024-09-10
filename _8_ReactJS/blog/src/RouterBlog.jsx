@@ -2,7 +2,12 @@ import React from 'react'
 import HeaderFunction from './components/HeaderFunction'
 import FooterFunction from './components/FooterFunction'
 import MainFunction from './components/MainFunction'
+
+// Router
 import { Navigate, Route, Routes } from 'react-router-dom'
+
+// Redux Login
+import LoginForm from './LoginForm'
 
 export default function RouterBlog() {
   return (
@@ -11,12 +16,13 @@ export default function RouterBlog() {
 
         <div className="container">
           <Routes>
-            <Route path={"/"} elementName={<MainFunction/>}/>
-            <Route path={"/index"} elementName={<MainFunction/>}/>
-            <Route path={"*"} elementName={<Navigate to={"/"}/>}/>
+            <Route path={"/"} element={<MainFunction/>}/>
+            <Route path={"/index"} element={<MainFunction/>}/>
+            <Route path={"/login"} element={<LoginForm/>}/>
+            <Route path={"*"} element={<Navigate to={"/"}/>}/>
           </Routes>
         </div>
-        <MainFunction/>
+        {/* <MainFunction/> */}
         <FooterFunction/>
     </React.Fragment>
   )

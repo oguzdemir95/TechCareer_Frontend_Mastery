@@ -8,16 +8,20 @@ import reportWebVitals from './reportWebVitals';
 // import FunctionComponentsTutorials from './components/FunctionComponentsTutorials';
 import RouterBlog from './RouterBlog';
 import { ThemeProvider } from './ThemeContext';
+import {Provider} from 'react-redux'
+import { store } from './store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    {/* Redux Login */}
+    <Provider store={store}>
     {/* Context Api import */}
     <ThemeProvider>
     <RouterBlog/>
     </ThemeProvider>
-    
+    </Provider>
     </BrowserRouter>
     
     {/* <FunctionComponentsTutorials/> */}
