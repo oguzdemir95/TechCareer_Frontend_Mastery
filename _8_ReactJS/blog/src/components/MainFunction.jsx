@@ -2,7 +2,7 @@ import React from 'react'
 
 import './main.css'
 import {useContext} from 'react';
-import {ThemeContext} from '../ThemeContext';
+import {ThemeContext} from './context-api/ThemeContext';
 
 
 export default function MainFunction() {

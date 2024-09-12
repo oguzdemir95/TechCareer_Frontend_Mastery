@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { login } from "./authSlice";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 // Login
 const LoginForm = () => {
@@ -69,6 +69,7 @@ const LoginForm = () => {
         <button type="reset" className="btn btn-danger ms-2">
           Temizle
         </button>
+        <Link className="btn btn-info text-white ms-2" to="/register">Kayıt Ol</Link>
       </form>
     </div>
   );

@@ -7,9 +7,9 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 // import FunctionComponentsTutorials from './components/FunctionComponentsTutorials';
 import RouterBlog from './RouterBlog';
-import { ThemeProvider } from './ThemeContext';
+import { ThemeProvider } from './components/context-api/ThemeContext';
 import {Provider} from 'react-redux'
-import { store } from './store';
+import { store } from '../src/components/login/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import "../style.css";
-import { ThemeContext } from "../ThemeContext";
+import { ThemeContext } from "./context-api/ThemeContext";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { logout } from "../authSlice";
+import { logout } from "./login/authSlice";
 
 // Redirect
 
