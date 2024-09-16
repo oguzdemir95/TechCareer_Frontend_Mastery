@@ -1,0 +1,182 @@
+import React, { useState } from "react";
+import { Form } from "react-router-dom";
+
+
+const RegisterForm=()=> {
+  // State
+  // Form State
+  const [formData, setFormData] = useState({
+    username: '',
+    email: '',
+    password: '',
+    confirmPassword: '',
+  });
+
+  // Loading State
+  const [loading,setLoading]=useState(false);
+
+  // Error
+  const [errors, setErrors] = useState({});
+
+  ////////////////////////////////////////////////
+
+  // Handle
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  // Validation
+  const validate = () => {
+    let tempErrors = {};
+    let isValid = true;
+
+    // Username
+    if (formData.username.trim().length < 3) {
+      tempErrors.username = 'Kullanıcı adı için az 3 karakter girmelisiniz.';
+      isValid = false;
+    }
+
+    // EMail
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,6}$/;
+    if (!emailPattern.test(formData.email)) {
+      tempErrors.email = "Email için doğru karakterler giriniz.";
+      isValid = false;
+    }
+
+    // Password
+    if (formData.password.length < 6) {
+      tempErrors.password = "Şifre için en az 6 karakter girmelisiniz.";
+      isValid = false;
+    }
+
+    // Re-Password
+    if (formData.password !== formData.confirmPassword) {
+      tempErrors.confirmPassword = "Şifreler birbirine uymuyor.";
+      isValid = false;
+    }
+
+    setErrors(tempErrors);
+    return isValid;
+  };
+
+  // Submit
+  let handleSubmit = async(e) => {
+    // Browser dursun, bir şey yapmasın
+    e.preventDefault();
+
+    // Loading çalışmaya başlasın
+    setLoading(true);
+
+    // Validate
+    if (validate()) {
+      // Loading Çalışsın
+      setLoading(false);
+
+      alert("Kayıt olundu");
+      // Form submission logic here
+      console.log(formData);
+    }
+  };
+
+  // Return
+  return (
+    <>
+      <h1 className="text-center display-4 text-primary text-uppercase mb-4 mt-4">
+        Register
+      </h1>
+      <form onSubmit={handleSubmit} className='mb-5'>
+        {/* Username */}
+        <div className="form-group mb-4">
+          <label>Kullanıcı Adı:</label>
+          <input type="text" 
+          name="username" 
+          
+          className="form-control" 
+          onChange={handleChange}
+          value={formData.username}/>
+          {/* {errors.username && <p style={{color:'red'}}>{errors.username}</p>} */}
+
+          {errors.username && <div
+            class="alert alert-info alert-dismissible fade show mt-2"
+            role="alert"
+          >
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="alert"
+              aria-label="Close"
+            ></button>
+          
+            <strong>Validation</strong> {errors.username && <p style={{color:'blue'}}>{errors.username}</p>}
+          </div>}
+
+
+          
+          
+        </div>
+
+        {/* Email */}
+        <div className="form-group mb-4">
+          <label>Email:</label>
+          <input type="email" 
+          name="email" 
+          
+          className="form-control"
+          onChange={handleChange}
+          value={formData.email}/>
+          {errors.email && <p style={{color:'red'}}>{errors.email}</p>}
+        </div>
+
+        {/* Password */}
+        <div className="form-group mb-4">
+          <label>Şifre:</label>
+          <input type="password" 
+          name="password" 
+          
+          className="form-control"
+          onChange={handleChange}
+          value={formData.password}/>
+          {errors.password && <p style={{color:'red'}}>{errors.password}</p>}
+        </div>
+
+        {/* Re-Password */}
+        <div className="form-group mb-4">
+          <label>Şifre Tekrarı:</label>
+          <input type="password" 
+          name="confirmPassword" 
+           
+          className="form-control"
+          onChange={handleChange}
+          value={formData.confirmPassword}/>
+          {errors.confirmPassword && <p style={{color:'red'}}>{errors.confirmPassword}</p>}
+        </div>
+
+        <button type="submit" disabled={false} className="btn btn-primary me-3">
+        {(loading)&&<div
+            class="d-flex justify-content-center align-items-center"
+          >
+            <div
+              class="spinner-border text-secondary spinner-border-sm"
+              role="status"
+            >
+              
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>}
+          
+          
+          Kayıt Ol</button>
+        <button type="reset" className="btn btn-danger">Temizle</button>
+
+      </form>
+    </>
+  );
+}
+
+// Export
+export default RegisterForm;

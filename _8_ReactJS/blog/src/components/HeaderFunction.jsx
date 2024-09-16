@@ -7,7 +7,6 @@ import { logout } from "./login/authSlice";
 
 // Redirect
 
-
 export default function HeaderFunction(props) {
   // Context Api
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -16,8 +15,6 @@ export default function HeaderFunction(props) {
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
   const user = useSelector((state) => state.auth.user);
   const dispatch = useDispatch();
-
-  
 
   const styles = {
     light: {
@@ -56,7 +53,7 @@ export default function HeaderFunction(props) {
   return (
     <>
       {/* {Start Nav} */}
-      <nav class="navbar fixed-top navbar-expand-md navbar-light bg-dark">
+      <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
         <div class="container">
           <Link to="/index" className="navbar-brand">
             {props.name}
@@ -85,26 +82,6 @@ export default function HeaderFunction(props) {
                   Link
                 </a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="dropdownId"
-                  data-bs-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                  <a class="dropdown-item" href="#">
-                    Action 1
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    Action 2
-                  </a>
-                </div>
-              </li>
             </ul>
             <form class="d-flex my-2 my-lg-0">
               <input
@@ -128,8 +105,7 @@ export default function HeaderFunction(props) {
 
             {isAuthenticated ? (
               <div>
-                
-                <span className="text-white me-2">
+                <span className="text-white ms-2 me-2">
                   Hoşgeldiniz, {user.username}
                 </span>
                 <button
@@ -144,6 +120,38 @@ export default function HeaderFunction(props) {
                 <i class="fa-solid fa-user-lock"></i>
               </Link>
             )}
+
+
+            {isAuthenticated ? (
+              <div>
+                
+              </div>
+            ) : (
+              <ul className="navbar-nav me-auto mt-2 mt-lg-0">
+              <li className="nav-item dropdown text-white">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="dropdownId"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Register/Login
+                </a>
+                <div className="dropdown-menu" aria-labelledby="dropdownId">
+                  <Link to="/login" className="me-2 dropdown-item">
+                    Login
+                  </Link>
+                  <Link to="/register" className="me-2 dropdown-item">
+                    Register
+                  </Link>
+                </div>
+              </li>
+            </ul>
+            )}
+
+            
           </div>
         </div>
       </nav>

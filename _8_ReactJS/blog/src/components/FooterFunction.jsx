@@ -3,9 +3,9 @@ import React from 'react'
 export default function FooterFunction() {
   return (
     <>
-    <footer className="bg-body-tertiary text-center">
+    <footer className="bg-dark text-center text-white">
   {/* Grid container */}
-  <div className="container p-4 pb-0">
+  <div className="container44 p-4 pb-0 ">
     {/* Section: Social media */}
     <section className="mb-4">
       {/* Facebook */}
@@ -78,7 +78,7 @@ export default function FooterFunction() {
     style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
   >
     © 2024 Copyright:
-    <a className="text-body" target='_blank' href="https://techcareer.net/">
+    <a className="text-white" target='_blank' href="https://techcareer.net/">
       TechCareer
     </a>
   </div>
