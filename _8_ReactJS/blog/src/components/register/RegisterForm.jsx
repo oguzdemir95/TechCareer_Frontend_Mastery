@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Form } from "react-router-dom";
 
 
@@ -15,10 +15,27 @@ const RegisterForm=()=> {
   // Loading State
   const [loading,setLoading]=useState(false);
 
+  // Multiple Request State
+  const [multipleRequest,setMultipleRequest]=useState(false);
+
   // Error
   const [errors, setErrors] = useState({});
 
+  // isFormValid
+  const [isFormValid,setIsFormValid]=useState(false);
+
   ////////////////////////////////////////////////
+
+  // Form Data hepsi doluysa
+  useEffect(()=>{
+    const{username,email,password,confirmPassword}=formData;
+    if(username&&email&&password&&confirmPassword){
+      setIsFormValid(true);
+    }
+    else{
+      setIsFormValid(false)
+    }
+  },[formData]);
 
   // Handle
   const handleChange = (e) => {
@@ -71,6 +88,9 @@ const RegisterForm=()=> {
 
     // Loading çalışmaya başlasın
     setLoading(true);
+
+    // Çoklu İsteği Kapatma
+    setMultipleRequest(false);
 
     // Validate
     if (validate()) {
@@ -156,7 +176,7 @@ const RegisterForm=()=> {
           {errors.confirmPassword && <p style={{color:'red'}}>{errors.confirmPassword}</p>}
         </div>
 
-        <button type="submit" disabled={false} className="btn btn-primary me-3">
+        <button type="submit" disabled={!isFormValid} className="btn btn-primary me-3">
         {(loading)&&<div
             class="d-flex justify-content-center align-items-center"
           >
