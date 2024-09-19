@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Form } from "react-router-dom";
 import ReusabilityTextInput from "./ReusabilityTextInput";
+import { Alert } from "@mui/material";
 
 const RegisterForm = () => {
   // State
@@ -108,6 +109,7 @@ const RegisterForm = () => {
       <h1 className="text-center display-4 text-primary text-uppercase mb-4 mt-4">
         Register
       </h1>
+
       <form onSubmit={handleSubmit} className="mb-5">
         {/* Username */}
         <div className="form-group mb-4">
@@ -137,6 +139,19 @@ const RegisterForm = () => {
                 <p style={{ color: "blue" }}>{errors.username}</p>
               )}
             </div>
+          )}
+          {errors.username && (
+            <Alert
+              variant="outlined"
+              severity="error"
+              sx={{
+                marginTop: 3, // 8px*3=24px
+              }}
+            >
+              {errors.username && (
+                <p style={{ color: "blue" }}>{errors.username}</p>
+              )}
+            </Alert>
           )}
         </div>
 
