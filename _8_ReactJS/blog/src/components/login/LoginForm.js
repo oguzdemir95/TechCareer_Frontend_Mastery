@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { login } from "./authSlice";
 import { Link, useNavigate } from "react-router-dom";
@@ -6,21 +6,49 @@ import { Link, useNavigate } from "react-router-dom";
 // Login
 const LoginForm = () => {
   // State
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
+
+  // Users
+  const [users,setUsers]=useState([]);
+  const[findUser,setFindUser]=useState(null);
 
   // Redirect
   const navigate = useNavigate();
 
+  // UseEffect
+  useEffect(()=>{
+    fetch('66ed10e0380821644cdb2edb.mockapi.io/api/v1/blog/react_project')
+    .then((response)=>response.json())
+    .then((data)=>setUsers(data))
+    .catch((err)=>{console.error(err)})
+  },[]);
+
+  // Find
+  const searchUser=()=>{
+    const user=users.find((u)=>u.email.toLowerCase()===email.toLowerCase());
+    setFindUser(user);
+    return findUser;
+  }
+
+  // Handle Submit
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Default: username: oguzhandemir-od@yandex.com
+    // Default: email: oguzhandemir-od@yandex.com
     // Default: password: root
 
-    if (username === "root" && password === "root") {
-      dispatch(login({ username }));
+    // if (username === "root" && password === "root") {
+    //   dispatch(login({ username }));
+
+    //   navigate("/index");
+    // } else {
+    //   alert("Geçersiz kullanıcı adı veya şifre girildi.");
+    // }
+
+    if (email === findUser.email && password === findUser.password) {
+      dispatch(login({ email }));
 
       navigate("/index");
     } else {
@@ -40,10 +68,10 @@ const LoginForm = () => {
             </label>
             <input
               type="text"
-              value={username}
+              value={email}
               className="form-control"
               placeholder="Kullanıcı Adı"
-              onChange={(e) => setUsername(e.target.value)}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
         </div>
@@ -63,7 +91,7 @@ const LoginForm = () => {
           </div>
         </div>
 
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn btn-primary" onClick={searchUser}>
           Giriş Yap
         </button>
         <button type="reset" className="btn btn-danger ms-2">
