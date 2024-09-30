@@ -35,6 +35,10 @@ const RegisterForm = () => {
     } else {
       setIsFormValid(false);
     }
+
+    // Fetch
+    // Axios (npm i axios)
+    // fetch('')
   }, [formData]);
 
   // Handle
@@ -100,6 +104,31 @@ const RegisterForm = () => {
       alert("Kayıt olundu");
       // Form submission logic here
       console.log(formData);
+      console.log(formData.username);
+      console.log(formData.password);
+      console.log(formData.email);   
+
+      // POST
+      // Submit Fetch API
+      fetch(
+        "https://66ed10e0380821644cdb2edb.mockapi.io/api/v1/blog/react_project",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body:JSON.stringify({
+            username:formData.username,
+            password:formData.password,
+            email:formData.email
+          })
+        }
+      ).then(response=>response.json()).then(data=>{
+        console.log("Success", data)
+      }       
+      ).catch(err=>{
+        console.log("ERROR",err)
+      })
     }
   };
 
